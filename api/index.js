@@ -21,7 +21,7 @@ async  function getSalesData(lat,lon){
 }
 
 
-cron.schedule("* * * * * *",async () => {
+cron.schedule("* * 0 * * *",async () => {
     console.log("Running cron")
     await getSalesData(40.7128, -74.006);
 })
